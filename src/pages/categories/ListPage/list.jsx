@@ -15,22 +15,7 @@ class ListPage extends React.Component {
 	}
    componentDidMount(){
 	   this.props.categoriesFromStore();
-	  //  this.setState({
-		//    inputValue: this.props.inputValue
-		// });
    }
-
-
-	// componentDidMount() {
-	// 	this.setState({inputValue: this.props.inputValue});
-	// }
-	// handleChange = (e) => {
-	// this.setState({inputValue: e.target.value});
-	// }
-	
-	// <input value={this.state.inputValue} onChange={this.handlechange} onBlur={() => this.props.actions.updateInput(this.state.inputValue)} />
-
-
    showCategoryList= (listCategories=[])=>{
     var result = null;
     if(listCategories.length>0){
@@ -46,7 +31,6 @@ class ListPage extends React.Component {
     }
    }
    onChange =(e)=>{
-		
 		let target = e.target;
 		let name = target.name;
 		let value = target.value;
